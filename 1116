@@ -1,0 +1,13 @@
+// Oper 1: (a + b) * c
+int op1 = (a + b) * c;
+// Oper 2: (b - d) / a
+int op2 = (b - d) / a;
+// Oper 3: (a * d) + c
+int op3 = (a * d) + c;
+// Oper 4: (a + b + c + d) / 2
+int op4 = (a + b + c + d) / 2;
+ // Output results
+System.out.println("Result of operation 1: " + op1);
+System.out.println("Result of operation 2: " + op2);
+System.out.println("Result of operation 3: " + op3);
+System.out.println("Result of operation 4: " + op4);
