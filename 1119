@@ -1,0 +1,27 @@
+if (!scanner.hasNextInt()) {
+            return;
+        }
+        int n = scanner.nextInt();
+
+        // Loop to process each score until -1 is encountered
+        while (scanner.hasNextInt()) {
+            int score = scanner.nextInt();
+            
+            // Stop condition
+            if (score == -1) {
+                break;
+            }
+
+            // Grade Classification
+            if (score >= 90 && score <= 100) {
+                System.out.println("Excellent");
+            } else if (score >= 75 && score <= 89) {
+                System.out.println("Good");
+            } else if (score >= 50 && score <= 74) {
+                System.out.println("Average");
+            } else if (score >= 35 && score <= 49) {
+                System.out.println("Pass");
+            } else if (score >= 0 && score <= 34) {
+                System.out.println("Fail");
+            }
+        }
