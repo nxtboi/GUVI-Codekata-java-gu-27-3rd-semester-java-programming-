@@ -1,0 +1,22 @@
+int oddSum = 0;
+        int evenSum = 0;
+        
+        while (scanner.hasNextInt()) {
+            int val = scanner.nextInt();
+            if (val == -1) break;
+            
+            if (val % 2 == 0) {
+                evenSum += val;
+            } else {
+                oddSum += val;
+            }
+        }
+        
+        if (oddSum > evenSum) {
+            System.out.println("Odd Sum Greater");
+        } else if (evenSum > oddSum) {
+            System.out.println("Even Sum Greater");
+        } else {
+            System.out.println("Equal");
+        }
+        
