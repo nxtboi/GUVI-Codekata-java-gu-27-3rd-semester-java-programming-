@@ -1,0 +1,22 @@
+var sc = new Scanner(System.in);
+        
+        if (!sc.hasNextInt()) {
+            return;
+        }
+        
+        var n = sc.nextInt();
+        var list = new ArrayList<Integer>();
+        
+        for (var i = 0; i < n; i++) {
+            list.add(sc.nextInt());
+        }
+        
+        Collections.sort(list);
+        
+        var secondLargest = list.get(n - 2);
+        System.out.println(secondLargest);
+        
+        sc.close();
+
+
+        
