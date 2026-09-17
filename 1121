@@ -1,0 +1,18 @@
+private String make;
+    private String model;
+    private int year;
+
+    public Car(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+
+    public int getCarAge(int currentYear) {
+        if (this.year > currentYear) {
+            System.out.println("Invalid year");
+            return -1;
+        }
+        return currentYear - this.year;
+    }
+    
