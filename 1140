@@ -1,0 +1,22 @@
+Scanner sc = new Scanner(System.in);
+        if (!sc.hasNextLine()) {
+            return;
+        }
+
+        String line = sc.nextLine().trim();
+        if (line.isEmpty()) {
+            System.out.println(0);
+            return;
+        }
+
+        String[] words = line.split("\\s+");
+        Set<String> uniqueWords = new HashSet<>();
+
+        for (String word : words) {
+            uniqueWords.add(word.toLowerCase());
+        }
+
+        System.out.println(uniqueWords.size());
+       
+       
+       
