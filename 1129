@@ -1,0 +1,14 @@
+int n = scanner.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        
+        int index = scanner.nextInt();
+        try {
+            int val = arr[index];
+            System.out.println("Element at index " + index + ": " + val);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println(e.getClass().getSimpleName() + ": " + e.getMessage());
+        }
+        
