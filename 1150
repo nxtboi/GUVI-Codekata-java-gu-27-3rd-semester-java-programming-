@@ -1,0 +1,14 @@
+Scanner sc = new Scanner(System.in);
+        if (!sc.hasNextDouble()) return;
+        double d = sc.nextDouble();
+        float f = sc.nextFloat();
+
+        int intFromDouble = Double.valueOf(d).intValue();
+        int intFromFloat = Float.valueOf(f).intValue();
+
+        System.out.println("Converted Integer from Double: " + intFromDouble);
+        System.out.println("Converted Integer from Float: " + intFromFloat);
+        System.out.println("Note: Data was truncated, not rounded."); 
+        
+        
+        
