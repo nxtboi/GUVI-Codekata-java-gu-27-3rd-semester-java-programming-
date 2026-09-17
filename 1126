@@ -1,0 +1,4 @@
+public InvalidAgeException(String message) {
+        super(message);
+    }
+    
