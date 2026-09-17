@@ -1,0 +1,9 @@
+strings.replaceAll(s -> s.toUpperCase());
+        strings.sort((s1, s2) -> s2.compareTo(s1));
+
+        for (String s : strings) {
+            System.out.println(s);
+        }
+        
+        
+        
