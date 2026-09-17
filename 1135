@@ -1,0 +1,5 @@
+list.stream()
+            .filter(w -> w.length() < 5)
+            .map(String::toUpperCase)
+            .forEach(System.out::println);
+        
