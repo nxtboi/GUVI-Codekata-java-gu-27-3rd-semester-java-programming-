@@ -1,0 +1,8 @@
+var sum = 0.0;
+    for (var num : list) {
+        sum += num;
+    }
+
+    var average = sum / n;
+    System.out.println(average);
+        
