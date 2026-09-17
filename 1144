@@ -1,0 +1,24 @@
+Scanner sc = new Scanner(System.in);
+        if (!sc.hasNextInt()) return;
+        int n = sc.nextInt();
+        
+        List<String> words = new ArrayList<>();
+        int maxLength = 0;
+        
+        for (int i = 0; i < n; i++) {
+            String word = sc.next();
+            words.add(word);
+            if (word.length() > maxLength) {
+                maxLength = word.length();
+            }
+        }
+        
+        for (String word : words) {
+            if (word.length() == maxLength) {
+                System.out.println(word);
+            }
+        }
+       
+       
+       
+      
