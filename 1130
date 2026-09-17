@@ -1,0 +1,17 @@
+try {
+            String input1 = scanner.next();
+            String input2 = scanner.next();
+
+            int dividend = Integer.parseInt(input1);
+            int divisor = Integer.parseInt(input2);
+
+            int result = dividend / divisor;
+            System.out.println("Result: " + result);
+        } catch (NumberFormatException e) {
+            System.out.println("NumberFormatException: Invalid input. Please enter integers only.");
+        } catch (ArithmeticException e) {
+            System.out.println("ArithmeticException: Division by zero is not allowed.");
+        }
+        
+        
+        
