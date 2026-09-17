@@ -1,0 +1,29 @@
+Scanner sc = new Scanner(System.in);
+        if (!sc.hasNextInt()) return;
+        int n = sc.nextInt();
+        Set<Integer> set1 = new LinkedHashSet<>();
+        for (int i = 0; i < n && sc.hasNextInt(); i++) {
+            set1.add(sc.nextInt());
+        }
+        if (!sc.hasNextInt()) return;
+        int m = sc.nextInt();
+        Set<Integer> set2 = new HashSet<>();
+        for (int i = 0; i < m && sc.hasNextInt(); i++) {
+            set2.add(sc.nextInt());
+        }
+
+        List<Integer> intersection = new ArrayList<>();
+        for (int num : set1) {
+            if (set2.contains(num)) {
+                intersection.add(num);
+            }
+        }
+
+        if (intersection.isEmpty()) {
+            System.out.println("No common elements");
+        } else {
+            for (int num : intersection) {
+                System.out.println(num);
+            }
+        }
+        
