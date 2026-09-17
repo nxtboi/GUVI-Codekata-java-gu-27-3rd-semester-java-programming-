@@ -1,0 +1,4 @@
+public UnderageException(String message) {
+        super(message);
+    }
+    
