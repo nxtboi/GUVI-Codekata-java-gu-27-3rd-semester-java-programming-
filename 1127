@@ -1,0 +1,17 @@
+int sum = 0;
+        try {
+            while (scanner.hasNext()) {
+                try {
+                    String input = scanner.next();
+                    int num = Integer.parseInt(input);
+                    sum += num;
+                } catch (NumberFormatException e) {
+                    // Ignore non-integer inputs and continue reading
+                }
+            }
+        } finally {
+            System.out.println("Sum of entered integers: " + sum);
+        }   
+        
+        
+        
