@@ -1,0 +1,5 @@
+list.stream()
+            .filter(Main::isPrime)
+            .sorted(Comparator.reverseOrder())
+            .forEach(System.out::println);
+        
