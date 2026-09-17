@@ -1,0 +1,11 @@
+boolean hasPalindrome = list.stream().anyMatch(s -> {
+            String clean = s.toLowerCase();
+            return clean.equals(new StringBuilder(clean).reverse().toString());
+        });
+        
+        System.out.println(hasPalindrome ? "Yes" : "No");
+        
+        sc.close();
+        
+        
+        
